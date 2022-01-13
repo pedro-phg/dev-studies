@@ -1,1 +1,1 @@
-# dev-studies
+# projeto para aprendizado de JavaScript
