@@ -1,1 +1,1 @@
-# projeto para aprendizado de JavaScript
+# Projeto para aprendizado de JavaScript
