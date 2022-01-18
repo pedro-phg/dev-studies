@@ -7,125 +7,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <a href="#start">Início</a>
-        <a href="#mid">Text</a>
-        <a href="#end">Text2</a>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#red" onclick="smoothScroll(event)">
+                        <img src="img/red-logo.png" alt="Logotipo do jogo Red Dead Redemption 2">
+                    </a>
+                </li>
+                <li>
+                    <a href="#last" onclick="smoothScroll(event)">
+                        <img src="img/last-logo.png" alt="Logotipo do jogo The Last of Us part 2">
+                    </a>
+                </li>
+                <li>
+                    <a href="#days" onclick="smoothScroll(event)">
+                        <img src="img/days-logo.png" alt="Logotipo do jogo Days Gone">
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div id="start">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eos hic ad modi exercitationem fugit,
-                adipisci quam aliquam accusamus eum, quas maiores illum in ea voluptatibus similique libero odit fuga?
-                Reiciendis quos voluptatum assumenda excepturi similique consequatur id nostrum tempore, quia maiores at
-                doloremque mollitia alias veniam error molestias voluptate eum dolores eveniet nemo maxime laboriosam
-                unde saepe omnis. Adipisci.
-                Dolore nihil vitae consequatur, fugit ratione mollitia ad, quos animi aperiam laborum suscipit eaque
-                esse repellat molestias excepturi possimus id ut ex dolores consectetur et dolorem? Porro facilis
-                commodi repudiandae!
-                Recusandae modi sint labore assumenda nulla cupiditate cumque, repellat reiciendis quas saepe enim ipsum
-                itaque consectetur deleniti quibusdam dolores praesentium quos! Fugiat iusto quisquam aliquid maxime
-                sunt vero odio aut.
-                Doloremque nesciunt sapiente consequuntur inventore harum animi sunt! Eveniet officia molestiae dolor
-                beatae aperiam voluptatum. Saepe facilis reprehenderit vitae, aliquid obcaecati ipsam qui assumenda fuga
-                rem odio, voluptatum quo recusandae!
-                Sequi quos veritatis magni suscipit, nisi quaerat cumque qui tempore similique laudantium consequatur
-                aspernatur excepturi! Eum sed, non nulla harum neque ex illo eius magnam, repellendus molestiae enim
-                laudantium amet!
-                Cupiditate commodi impedit ab aliquam tempore molestiae voluptates eaque quam maiores quia minus
-                excepturi, omnis labore nemo facilis unde doloribus reiciendis autem facere, minima aperiam aspernatur
-                consectetur. Aut, nulla magni.
-                Minima fuga tempore, iure odit placeat modi error suscipit accusantium eligendi officiis eveniet numquam
-                adipisci provident animi neque vel nisi enim ratione molestiae. Architecto doloremque hic rem, sapiente
-                suscipit exercitationem.
-                At ipsam soluta esse voluptates voluptatibus blanditiis quia sit commodi! Magnam unde corporis
-                necessitatibus molestiae, sunt officia laboriosam fuga magni, placeat nisi voluptas, distinctio nam quae
-                tempora sequi possimus dignissimos.
-                Libero, cumque. Temporibus sapiente nam alias eius cum, ullam nesciunt et esse qui, possimus voluptate
-                nisi, tempore eveniet illum! Libero pariatur, fugiat minima repellat qui cumque perferendis dignissimos
-                ex expedita?
-            </p>
-            <picture>
-                <source media="(max-width: 720px)" srcset="img/red-pq.jpg">
-                <img src="img/red.jpg" alt="Red Dead Capa">
-            </picture>
-        </div>
-        <section class="sectionStyle" id="red">
-            <ul class="slider">
-                <li>
-                    <input type="radio" id="redSlide1" checked>
-                    <label for="redSlide1"></label>
-                    <img src="img/1.jpg" />
-                </li>
-                <li>
-                    <input type="radio" id="redSlide2">
-                    <label for="redSlide2"></label>
-                    <img src="img/2.jpg" />
-                </li>
-                <li>
-                    <input type="radio" id="redSlide3">
-                    <label for="redSlide3"></label>
-                    <img src="img/3.jpg" />
-                </li>
-            </ul>
-            <p>
-
-            </p>
+    <main class="mainStyle">
+        <section id="red">
+            <div class="redEntry">
+                <img class="red-logo" src="img/red-logo2.png" alt="Logo Red Dead Redemption">
+                <div id="red-links">
+                    <a href="#red-sinopse" id="red-l1" onclick="smoothScroll(event)">Sinopse</a>
+                    <a href="#red-galery" id="red-l2" onclick="smoothScroll(event)">Galeria</a>
+                    <a href="#red-video" id="red-l3" onclick="smoothScroll(event)"  >Trailer</a>
+                </div>
+            </div>
+            <div id="red-sinopse">
+                <h1>Sinopse</h1>
+                <p class="textStyle">
+                    Red Dead Redemption II é um jogo eletrônico de ação-aventura desenvolvido pela Rockstar Studios e publicado pela Rockstar Games. É uma prequela de Red Dead Redemption de 2010, sendo o terceiro título da franquia Red Dead. O enredo centra-se no bandido Arthur Morgan, um dos principais membros da gangue Van der Linde. Red Dead Redemption II foi lançado para PlayStation 4 e Xbox One em 26 de fevereiro de 2019. Foi universalmente aclamado pelos críticos, que elogiou a sua história, o mundo fez o famoso nível de detalhes. O jogo gerou 877 milhões de dólares em vendas a partir de semana de estreia, vendendo mais de 67 milhões de cópias em duas semanas.
+    
+                </p>
+            </div>
+            <div id="red-galery">
+                <h1>Galeria</h1>
+                <ul class="slide-list">
+                    <li>
+                        <img src="img/red1.jpg" />
+                    </li>
+                    <li>
+                        <img src="img/red2.jpg" />
+                    </li>
+                    <li>
+                        <img src="img/red3.jpg" />
+                    </li>
+                </ul>
+            </div>
+            <div id="red-video">
+                <h1>Trailer</h1>
+                <iframe width="1080" height="600" src="https://www.youtube.com/embed/eaW0tYpxyp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
         <section class="sectionStyle" id="last">
-            <ul class="slider">
+            <p class="textStyle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laborum hic mollitia! Delectus in,
+                ratione deserunt non repudiandae obcaecati. Ullam illo a accusantium. Reiciendis quos aut nulla
+                distinctio inventore nemo.
+            </p>
+            <ul class="slide-list">
                 <li>
-                    <input type="radio" id="lastSlide1" checked>
-                    <label for="lastSlide1"></label>
-                    <img src="img/1.jpg" />
+                    <img src="img/last1.jpg" />
                 </li>
                 <li>
-                    <input type="radio" id="lastSlide2">
-                    <label for="lastSlide2"></label>
-                    <img src="img/2.jpg" />
+                    <img src="img/last2.jpg" />
                 </li>
                 <li>
-                    <input type="radio" id="lastSlide3">
-                    <label for="lastSlide3"></label>
-                    <img src="img/3.jpg" />
+                    <img src="img/last3.jpg" />
                 </li>
             </ul>
-            <p>
-
-            </p>
         </section>
         <section class="sectionStyle" id="days">
-            <ul class="slider">
+            <p class="textStyle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laborum hic mollitia! Delectus in,
+                ratione deserunt non repudiandae obcaecati. Ullam illo a accusantium. Reiciendis quos aut nulla
+                distinctio inventore nemo.
+            </p>
+            <ul class="slide-list">
                 <li>
-                    <input type="radio" id="daysSlide1" checked>
-                    <label for="daysSlide1"></label>
-                    <img src="img/1.jpg" />
+                    <img src="img/days1.jpg" />
                 </li>
                 <li>
-                    <input type="radio" id="daysSlide2">
-                    <label for="daysSlide2"></label>
-                    <img src="img/2.jpg" />
+                    <img src="img/days2.jpg" />
                 </li>
                 <li>
-                    <input type="radio" id="daysSlide3">
-                    <label for="daysSlide3"></label>
-                    <img src="img/3.jpg" />
+                    <img src="img/days3.jpg" />
                 </li>
             </ul>
-            <p>
-
-            </p>
         </section>
     </main>
 
     <footer class="footer">
         Todos os direitos reservados &reg;.
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

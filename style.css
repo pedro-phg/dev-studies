@@ -2,63 +2,224 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100&display=swap');
 
+@font-face {
+    font-family: red;
+    src: url(fonts/chinese\ rocks\ rg.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:active {
-    color: gray;
-}
-
-.header {
-    padding: 15px;
-    position: sticky;
-    margin-bottom: 10px;
-    top: 0;
+#menu {
+    position: fixed;
+    top:0;
     background-color: black;
-    color: white;
-    text-align: left;
-    font-family: "Montserrat";
+    width: 100%;
+    box-shadow: 0px 1px 0px #D70110;
+    z-index: 11;
 }
 
-.header a {
-    padding: 0px 30px;
+#menu img {
+    width: 160px;
+    height: 60px;
+    padding: 10px 30px;
+}
+
+#menu ul {
+    margin-left: 80px;
+    list-style-type: none;
+}
+#menu li {
+    float: left;
+    height: 60px;
+}
+
+#menu img:hover {
+    background-color: #D70110;
 }
 
 .footer {
+    position: absolute;
+    width: 100%;
+    font-family: Montserrat;
     background-color: black;
     color: white;
     text-align: center;
 }
 
-.sectionStyle {
+.mainStyle section {
+    margin: auto;
+    max-width: 1080px;
+    margin-top: 30px;
+}
+
+.mainStyle img {
+    max-width: 1080px;
+}
+
+.textStyle {
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.slide-list {
     display: flex;
     flex-direction: row;
+    overflow-x: scroll;
+}
+  
+.slide-list::-webkit-scrollbar {
+    max-width: 18px;
+    max-height: 18px;
 }
 
-.slider {
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
+.slide-list::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-top: 4px solid rgb(206, 206, 206);
+    border-bottom: 4px solid rgb(206, 206, 206);
+}
+
+.slide-list::-webkit-scrollbar-track {
+    background: rgb(206, 206, 206);
+}
+
+/*Seção Red Dead Redemption 2*/
+
+/*Entrada*/
+#red {
+    background-image: url(img/teste.jpg);
+}
+
+.redEntry {
+    width: 1080px;
+    height: 720px;
+    background-image: url(img/red-capa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+/*Logotipo*/
+.redEntry img {
+    animation: entrada 2s ease;
     position: relative;
+    width: 800px;
+    left: 130px;
+    top: 40px;
+
+    transform: skewY(-2deg)
 }
 
-.slider li {
-    list-style: none;
+
+@keyframes entrada {
+    from {
+        transform: translateY(-20px);
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+/*Links de Entrada*/
+
+#red-links {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    position: relative;
+    left: 160px;
+    top: 70px;
+
+}
+
+#red-links a {
+    text-indent: 7px;
+    text-decoration: none; 
+    background-image: linear-gradient(to right, black, black, rgba(0, 0, 0, 0.021));
+    margin-bottom: 5px;
+    width: 200px;
+    color: white;
+    font-family: 'red';
+    padding: 10px;
+    border-radius: 10% 20% 10% 15px;
+    font-size: 2.1em;
+    transition-duration: 0.1s;
+}
+
+#red-links a:hover{
+    color: rgb(255, 0, 0);
+    font-size: 2.3em;
+    /*border: red solid 1px;*/
+}
+
+#red-l1 {
+    animation: entrada-link 1s ease 0.05s;
+    position: relative;
+    left: 10px;
+    transform: skewY(-3.7deg);
+}
+
+#red-l2 {
+    animation: entrada-link 1s ease 0.1s;
+    position: relative;
+    left: 30px;
+    transform: skewY(-3deg);
+}
+
+#red-l3 {
+    animation: entrada-link 1s ease 0.2s;
+    position: relative;
+    left: 10px;
+    transform: skewY(-2deg);
+}
+
+@keyframes entrada-link {
+    from {
+        opacity: 0%;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+/*Sinopse*/
+
+#red-sinopse {
+    margin: 40px 120px 80px 120px;
+}
+
+#red h1 {
+    font-family: 'red';
+    font-size: 4em;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+/*Galeria*/
+#red-galery {
+    margin-bottom: 80px;
+}
+
+/*Trailer*/
+
+
+#red-video {
+    position: relativa;
+    width: 1080px;
+    height: 500px;
+}
+
+#red-video iframe {
     position: absolute;
-}
-
-.slider img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
+    left: 50%;
+    transform: translateX(-50%)
+    
 }
