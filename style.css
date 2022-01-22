@@ -110,7 +110,6 @@
     left: 130px;
     top: 40px;
 
-    transform: skewY(-2deg)
 }
 
 
@@ -222,4 +221,34 @@
     left: 50%;
     transform: translateX(-50%)
     
+}
+
+/*The Last of US Part II*/
+
+#last {
+    margin-top: 200px;
+}
+
+.lastEntry {
+    width: 1080px;
+    height: 720px;
+    background-image: url(img/lastcapa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+    color: white;
+}
+
+.lastEntry img {
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+
+#last-links {
+    
+}
+
+#last-links a:visited {
+    color: white;
 }
